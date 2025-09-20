@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Orthosandent - Landing Page
 
-## Getting Started
+Bienvenido al repositorio de la **landing page de Orthosandent**, el consultorio de la Dra. Ana Paula Armendáriz, especialista en **Ortodoncia y Ortopedia Maxilar**. Esta página está diseñada para presentar de manera clara y atractiva los servicios, valores y contacto del consultorio, enfocándose en la experiencia del paciente y en transmitir confianza y profesionalismo.
 
-First, run the development server:
+---
+
+## 🦷 Sobre Orthosandent
+
+Soy la **Dra. Ana Paula Armendáriz**, odontóloga apasionada por el cuidado de la salud bucal y la transformación de sonrisas. Mi formación académica comenzó en la **Universidad Central del Ecuador**, donde obtuve el título de odontóloga, y posteriormente realicé la **Maestría en Ortodoncia y Ortopedia Maxilar** en la **Universidad Autónoma de Nuevo León, México**, lo que me permitió especializarme en tratamientos de alta calidad para el bienestar y la estética dental.
+
+En **Orthosandent**, mi misión es ofrecer una **atención integral y personalizada**, basada en la ciencia, la tecnología y un trato humano cercano. Estoy convencida de que cada sonrisa es única, por lo que diseño planes de tratamiento a la medida de cada paciente, priorizando siempre la salud, la comodidad y la confianza.
+
+Mis valores son la **ética, responsabilidad, empatía y excelencia profesional**. Creo firmemente que la odontología no solo mejora sonrisas, sino también la vida de las personas, y por eso me comprometo día a día a brindar un servicio de calidad, con calidez y dedicación.
+
+En Orthosandent creemos que **tu mejor sonrisa empieza aquí**, y trabajamos para que cada paciente reciba la atención que merece.
+
+---
+
+## 💻 Tecnologías utilizadas
+
+- **React** – Biblioteca de JavaScript para construir interfaces de usuario dinámicas.
+- **SCSS** – Preprocesador de CSS que permite una estructura de estilos más organizada y legible.
+- **JavaScript** – Lenguaje principal para manejar la lógica del frontend.
+
+---
+
+## 🚀 Cómo ejecutar el proyecto
+
+1. Clonar el repositorio:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/tu-usuario/orthosandent-landing.git
