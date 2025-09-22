@@ -1,45 +1,180 @@
 {
     "navbar": {
-        
+        "start": "Home",
+        "benefits": "Benefits",
+        "about": "About me",
+        "services": "Services",
+        "reviews": "Reviews",
+        "contact": "Contact",
+        "logo": "Orthosadent logo",
+        "language": "Español",
+        "ham": "Menu icon"
     },
 
     "hero": {
-        
+        "title": "ORTHODONTICS AND MAXILLARY ORTHOPEDICS",
+        "subtitle": "We take care of every stage of your dental health with treatments in general dentistry, endodontics, oral rehabilitation, and implantology. Your best smile starts here.",
+        "image": "Image of Dr. Ana Paula Armendáriz Salas"
     },
 
     "benefits": {
-       
+       "title": "Your dental health in the best hands",
+       "body": "In our practice we take care of your dental health with trust, precision, and warmth, ensuring effective results. Here are some of the benefits you will find with us.",
+       "card1": {
+        "image": "Tooth icon",
+        "title": "Comprehensive Care",
+        "body": "Complete treatments in orthodontics, general dentistry, oral rehabilitation, implantology, and more."
+       },
+       "card2": {
+        "image": "Tools icon",
+        "title": "Advanced Technology",
+        "body": "Modern treatments supported by innovation and precision for reliable results."
+       },
+       "card3": {
+        "image": "Hands icon",
+        "title": "Trust and Warmth",
+        "body": "An experience based on empathy and clear communication so you always feel in good hands."
+       },
+       "card4": {
+        "image": "Stars icon",
+        "title": "Long-lasting Results",
+        "body": "Treatments designed to keep your smile healthy and aesthetic in the long term."
+       }
     },
 
     "about": {
-
+        "body1": "I am Dr. Ana Paula Armendáriz, a dentist passionate about oral health care and transforming smiles. My academic training began at the Central University of Ecuador, where I earned my dental degree, and later I completed a Master's in Orthodontics and Maxillofacial Orthopedics at the Autonomous University of Nuevo León, Mexico. This allowed me to specialize in high-quality treatments for dental health and aesthetics.",
+        "body2": "At Orthosadent, my mission is to provide comprehensive and personalized care, based on science, technology, and a close human approach. I am convinced that every smile is unique, so I design customized treatment plans for each patient, always prioritizing health, comfort, and confidence.",
+        "body3": "My values are ethics, responsibility, empathy, and professional excellence. I firmly believe that dentistry not only improves smiles but also people’s lives, and that is why I commit every day to providing quality service with warmth and dedication.",
+        "university": "University logo"
     },
 
     "services": {
-        
+        "title": "Services designed for your smile",
+        "body": "We offer complete dental care, from orthodontics and pediatric dentistry to oral rehabilitation, surgery, and implantology, always with a personalized and professional approach.",
+        "service1": {
+            "image": "Orthodontics image",
+            "title": "Orthodontics",
+            "body": "Orthodontics is much more than aligning teeth: it is a comprehensive treatment that seeks to improve bite function, oral health, and facial harmony. At Orthosadent we offer different treatment alternatives, from conventional braces to modern and aesthetic techniques such as dental aligners, always designed according to each patient’s specific needs. Our goal is to provide functional and long-lasting results, taking care of both health and confidence in your smile.",
+            "short": "Braces and aligner treatments designed to achieve healthy, safe, and harmonious smiles."
+        },
+        "service2": {
+            "image": "General dentistry image",
+            "title": "General Dentistry",
+            "body": "General dentistry is the foundation of oral health care. In this area, we focus on the prevention, diagnosis, and treatment of the most common diseases of teeth and gums. We perform professional cleanings, fillings, simple extractions, and periodic check-ups that help maintain a healthy mouth and prevent future complications. We believe that good oral health begins with preventive habits and regular check-ups.",
+            "short": "Comprehensive care with cleanings, fillings, and check-ups for long-term oral health."
+        },
+        "service3": {
+            "image": "Oral rehabilitation image",
+            "title": "Oral Rehabilitation",
+            "body": "Oral rehabilitation restores function, aesthetics, and health to the mouth when there are missing, worn, or altered teeth. At Orthosadent we design personalized treatments that include fixed or removable prostheses or crowns, with the goal of restoring chewing and the patient’s smile. We focus on ensuring that the final result is not only aesthetically pleasing, but also comfortable, functional, and durable.",
+            "short": "Personalized treatments with prostheses and crowns to recover function, aesthetics, and oral health."
+        },
+        "service4": {
+            "image": "Oral and maxillofacial surgery image",
+            "title": "Oral and Maxillofacial Surgery",
+            "body": "We provide surgical services ranging from simple procedures, such as tooth or wisdom tooth extraction, to more complex surgeries of the jawbones. All surgeries are performed under high standards of safety, hygiene, and patient care. Our commitment is to guarantee safe procedures, proper pain management, and the fastest and most comfortable recovery possible.",
+            "short": "Surgical services with high standards of safety, hygiene, and patient care."
+        },
+        "service5": {
+            "image": "Implantology image",
+            "title": "Implantology",
+            "body": "Dental implants are the most advanced and reliable option to replace missing teeth. At Orthosadent we use modern techniques and high-quality materials that allow us to restore fixed, stable, and naturally aesthetic teeth. This treatment improves chewing function, the aesthetics of the smile, and speaking confidence, becoming a long-term solution that transforms our patients’ quality of life.",
+            "short": "Modern, long-lasting dental implants that replace missing teeth with natural results."
+        },
+        "service6": {
+            "image": "Pediatric dentistry image",
+            "title": "Pediatric Dentistry",
+            "body": "Children require special care in their dental health. Our pediatric dentistry service focuses on prevention, early diagnosis, and treatment of oral diseases in childhood. We ensure a positive, fear-free experience so that young patients develop trust and good habits from an early age. With a playful and patient-centered approach, we make every visit to the dentist calm and enjoyable.",
+            "short": "Dental care for children with a playful approach that fosters trust and healthy habits."
+        },
+        "service7": {
+            "image": "Endodontics image",
+            "title": "Endodontics",
+            "body": "Endodontics, commonly known as “root canal treatment,” is performed when a tooth has deep decay, infection, or trauma. Its goal is to eliminate pain, preserve the tooth, and avoid extraction. At Orthosadent we perform these procedures with modern technology and painless techniques, always prioritizing the patient’s comfort and peace of mind.",
+            "short": "Safe procedures to treat infections and save teeth without the need for extraction."
+        }
     },
 
     "contact": {
-
+        "title": "Always available to help you",
+        "body": "Here you will find our schedule, address, and communication channels to book your appointment or resolve any questions. We are ready to assist you with warmth and trust.",
+        "image": "Image of Dr. Chapo",
+        "phone": "Phone", 
+        "email": "Email",
+        "address": {
+            "title": "Address",
+            "address": "Av. República E6-561 and Eloy Alfaro. Consorcio Profesional Building. Ground floor. Quito, Ecuador. (In front of La Pradera)"
+        },
+        "time": {
+            "title": "Opening hours",
+            "monday": "Monday to Friday",
+            "saturday": "Saturday"
+        }
     },
 
     "reviews": {
-       
+        "title": "What our patients say",
+        "body": "Our patients’ trust is our best introduction. Here we share real experiences from those who have trusted us to take care of their smile.",
+        "image": "Patient image",
+        "card1": {
+            "month": "December",
+            "title": "Dr. Ana Pau accompanied me throughout my orthognathic surgery process, always with kindness and commitment. Despite the complexity of my case, she was attentive and worked together with other specialists to ensure everything went well."
+        },
+        "card2": {
+            "month": "January",
+            "title": "Personalized care and visible results from the first visits. I recommend Orthosadent to my entire family for their professionalism and warmth."
+        },
+        "card3": {
+            "month": "September",
+            "title": "Excellent care from the very first appointment. The team was very professional and kind, and my smile has never been so aligned and healthy."
+        }
     },
 
     "faq": {
-
+        "title": "Frequently Asked Questions",
+        "body": "We answer the most common questions about our treatments and services, so you have all the information you need before your visit. We want you to feel safe and well-informed.",
+        "faq1": {
+            "question": "Is orthodontic treatment painful?",
+            "answer": "The treatment is not painful; there may be slight discomfort at the beginning, but it disappears after a few days."
+        },
+        "faq2": {
+            "question": "How often should I visit the dentist?",
+            "answer": "We recommend a check-up every six months to maintain your dental health and prevent future problems."
+        },
+        "faq3": {
+            "question": "What is the ideal age for orthodontics?",
+            "answer": "A first check-up is recommended at age 7, although adults can also receive treatment."
+        },
+        "faq4": {
+            "question": "Are dental implants safe?",
+            "answer": "Yes, they are a reliable procedure with a high success rate when using quality materials."
+        },
+        "faq5": {
+            "question": "Do you accept patients who have never been to the dentist?",
+            "answer": "Of course, we treat patients of all ages, even if it’s their first visit."
+        },
+        "faq6": {
+            "question": "Do you provide treatments for children?",
+            "answer": "Yes, we offer specialized pediatric dentistry to provide friendly and safe care."
+        }
     },
 
     "footer": {
-
+        "body": "We work every day to provide you with close, professional, and high-quality care, ensuring well-being and confidence in every visit. Your best smile starts here.",
+        "links": "Quick links",
+        "social": "Social media",
+        "copyright": "All rights reserved."
     },
 
     "buttons": {
-
+        "begin": "Get Started",
+        "more": "Learn More"
     },
 
     "metadata": {
-        
+        "title": "Orthodontics and Maxillary Orthopedics – Orthosadent",
+        "description": "Specialized dental care in orthodontics, maxillary orthopedics, implants, and oral rehabilitation. Dr. Ana Paula Armendáriz offers personalized treatments with ethics, quality, and warmth to transform your smile.",
+        "title_short": "Orthosadent – Orthodontics and Maxillary Orthopedics"
     }
 }

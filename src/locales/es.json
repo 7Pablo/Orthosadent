@@ -1,45 +1,180 @@
 {
     "navbar": {
-        
+        "start": "Inicio",
+        "benefits": "Beneficios",
+        "about": "Sobre mí",
+        "services": "Servicios",
+        "reviews": "Reseñas",
+        "contact": "Contacto",
+        "logo": "Logo de Orthosadent",
+        "language": "English",
+        "ham": "Ícono del menú"
     },
 
     "hero": {
-        
+        "title": "ORTODONCIA Y ORTOPEDIA MAXILAR",
+        "subtitle": "Cuidamos de cada etapa de tu salud dental con tratamientos de odontología general, endodoncia, rehabilitación oral e implantología. Tu mejor sonrisa empieza aquí.",
+        "image": "Imagen de la Dra. Ana Paula Armendáriz Salas"
     },
 
     "benefits": {
-       
+       "title": "Tu salud dental en las mejores manos",
+       "body": "En nuestro consultorio cuidamos tu salud dental con confianza, precisión y cercanía, asegurando resultados efectivos. Estos son algunos de los beneficios que encontrarás con nosotros.",
+       "card1": {
+        "image": "Ícono de diente",
+        "title": "Atención Integral",
+        "body": "Tratamientos completos en ortodoncia, odontología general, rehabilitación oral, implantología y más."
+       },
+       "card2": {
+        "image": "Ícono de herramientas",
+        "title": "Tecnología Avanzada",
+        "body": "Tratamientos completos en ortodoncia, odontología general, rehabilitación oral, implantología y más."
+       },
+       "card3": {
+        "image": "Ícono de manos",
+        "title": "Confianza y Cercanía",
+        "body": "Una experiencia basada en empatía y comunicación clara para que siempre te sientas en buenas manos."
+       },
+       "card4": {
+        "image": "Ícono de estrellas",
+        "title": "Resultados Duraderos",
+        "body": "Tratamientos diseñados para mantener tu sonrisa sana y estética a largo plazo."
+       }
     },
 
     "about": {
-
+        "body1": "Soy la Dra. Ana Paula Armendáriz, odontóloga apasionada por el cuidado de la salud bucal y la transformación de sonrisas. Mi formación académica comenzó en la Universidad Central del Ecuador, donde obtuve el título de odontóloga, y posteriormente realicé la Maestría en Ortodoncia y Ortopedia Maxilar en la Universidad Autónoma de Nuevo León, México, lo que me permitió especializarme en tratamientos de alta calidad para el bienestar y la estética dental.",
+        "body2": "En Orthosadent, mi misión es ofrecer una atención integral y personalizada, basada en la ciencia, la tecnología y un trato humano cercano. Estoy convencida de que cada sonrisa es única, por lo que diseño planes de tratamiento a la medida de cada paciente, priorizando siempre la salud, la comodidad y la confianza.",
+        "body3": "Mis valores son la ética, la responsabilidad, la empatía y la excelencia profesional. Creo firmemente que la odontología no solo mejora sonrisas, sino también la vida de las personas, y por eso me comprometo día a día a brindar un servicio de calidad, con calidez y dedicación.",
+        "university": "Logo de universidad"
     },
 
     "services": {
-        
+        "title": "Servicios diseñados para tu sonrisa",
+        "body": "Ofrecemos una atención odontológica completa, desde ortodoncia y odontopediatría hasta rehabilitación oral, cirugía e implantología, siempre con un enfoque personalizado y profesional.",
+        "service1": {
+            "image": "Imagen de ortodoncia",
+            "title": "Ortodoncia",
+            "body": "La ortodoncia es mucho más que alinear dientes: es un tratamiento integral que busca mejorar la función de la mordida, la salud oral y la armonía facial. En Orthosadent ofrecemos diferentes alternativas de tratamiento, desde brackets convencionales hasta técnicas modernas y estéticas como son los alineadores dentales, siempre diseñadas de acuerdo a las necesidades específicas de cada paciente. Nuestro objetivo es brindar resultados funcionales y duraderos, cuidando tanto la salud como la confianza en tu sonrisa.",
+            "short": "Tratamientos de brackets y alineadores diseñados para lograr sonrisas sanas, seguras y armónicas."
+        },
+        "service2": {
+            "image": "Imagen de odontología general",
+            "title": "Odontología General",
+            "body": "La odontología general es la base del cuidado de la salud bucal. En esta área nos enfocamos en la prevención, diagnóstico y tratamiento de las enfermedades más comunes de dientes y encías. Realizamos limpiezas profesionales, resinas, extracciones simples, y revisiones periódicas que permiten mantener una boca sana y evitar complicaciones a futuro. Creemos que una buena salud oral comienza con hábitos preventivos y chequeos regulares.",
+            "short": "Cuidado integral con limpiezas, resinas y revisiones periódicas para una salud oral duradera."
+        },
+        "service3": {
+            "image": "Imagen de rehabilitación oral",
+            "title": "Rehabilitación Oral",
+            "body": "La rehabilitación oral se encarga de devolver función, estética y salud a la boca cuando existen dientes ausentes, desgastados o con alteraciones. En Orthosadent diseñamos tratamientos personalizados que incluyen prótesis fijas, removibles o coronas, con el fin de restaurar la masticación y la sonrisa del paciente. Nos enfocamos en que el resultado final no solo sea estéticamente agradable, sino también cómodo, funcional y duradero.",
+            "short": "Tratamientos personalizados con prótesis y coronas para recuperar la función, la estética y la salud bucal."
+        },
+        "service4": {
+            "image": "Imagen de cirugía oral y cirugía maxilofacial",
+            "title": "Cirugía Oral y Cirugía Maxilofacial",
+            "body": "Contamos con servicios quirúrgicos que abarcan desde procedimientos sencillos, como la extracción de piezas dentales o muelas del juicio, hasta cirugías más complejas de los huesos maxilares. Todas las cirugías se realizan bajo altos estándares de seguridad, higiene y cuidado del paciente. Nuestro compromiso es garantizar procedimientos seguros, con un manejo adecuado del dolor y una recuperación lo más rápida y cómoda posible.",
+            "short": "Servicios quirúrgicos con altos estándares de seguridad, higiene y cuidado del paciente."
+        },
+        "service5": {
+            "image": "Imagen de implantología",
+            "title": "Implantología",
+            "body": "Los implantes dentales son la opción más avanzada y confiable para reemplazar dientes perdidos. En Orthosadent utilizamos técnicas modernas y materiales de alta calidad que permiten devolver al paciente piezas fijas, estables y estéticamente naturales. Este tratamiento mejora la función al masticar, la estética de la sonrisa y la confianza al hablar, convirtiéndose en una solución a largo plazo que cambia la calidad de vida de nuestros pacientes.",
+            "short": "Implantes dentales modernos y duraderos que reemplazan dientes perdidos con resultados naturales."
+        },
+        "service6": {
+            "image": "Imagen de odontopediatría",
+            "title": "Odontopediatría",
+            "body": "Los niños requieren un cuidado especial en su salud dental. Nuestra atención odontopediátrica está enfocada en la prevención, el diagnóstico temprano y el tratamiento de enfermedades bucales en la infancia. Nos aseguramos de brindar una experiencia positiva y sin miedo, para que los pequeños pacientes desarrollen confianza y buenos hábitos desde temprana edad. Con un enfoque lúdico y paciente, buscamos que cada visita al dentista sea tranquila y agradable.",
+            "short": "Atención dental para niños con un enfoque lúdico que fomenta confianza y buenos hábitos."
+        },
+        "service7": {
+            "image": "Imagen de endodoncia",
+            "title": "Endodoncia",
+            "body": "La endodoncia, conocida comúnmente como “tratamiento de conducto”, se realiza cuando un diente presenta una caries profunda, infección o ha sufrido un traumatismo. Su objetivo es eliminar el dolor, conservar la pieza dental y evitar la extracción. En Orthosadent realizamos estos procedimientos con tecnología moderna y técnicas indoloras, priorizando siempre la comodidad y tranquilidad del paciente.",
+            "short": "Procedimientos seguros para tratar infecciones y salvar piezas dentales sin necesidad de extracción."
+        }
     },
 
     "contact": {
-
+        "title": "Siempre disponibles para ayudarte",
+        "body": "Aquí encontrarás nuestros horarios, dirección y medios de comunicación para agendar tu cita o resolver cualquier duda. Estamos listos para atenderte con cercanía y confianza.",
+        "image": "Imagen de Dr. Chapo",
+        "phone": "Teléfono", 
+        "email": "Correo",
+        "address": {
+            "title": "Dirección",
+            "address": "Av. República E6-561 y Eloy Alfaro. Edificio Consorcio Profesional. Planta baja. Quito, Ecuador. (Frente a la Pradera)"
+        },
+        "time": {
+            "title": "Horario de atención",
+            "monday": "Lunes a viernes",
+            "saturday": "Sábado"
+        }
     },
 
     "reviews": {
-       
+        "title": "Lo que nuestros pacientes dicen",
+        "body": "La confianza de nuestros pacientes es nuestra mejor carta de presentación. Aquí compartimos experiencias reales de quienes han confiado en nosotros para cuidar su sonrisa.",
+        "image": "Imagen del paciente",
+        "card1": {
+            "month": "Diciembre",
+            "title": "La dra. Ana Pau me acompañó en todo mi proceso de cirugía ortognática, siempre con amabilidad y compromiso. A pesar de lo complejo de mi caso, estuvo al pendiente y trabajando junto a otros especialistas para que todo saliera bien."
+        },
+        "card2": {
+            "month": "Enero",
+            "title": "Atención personalizada y resultados visibles desde las primeras visitas. Recomiendo Orthosadent a toda mi familia por su profesionalismo y cercanía."
+        },
+        "card3": {
+            "month": "Septiembre",
+            "title": "Excelente atención desde la primera cita. El equipo fue muy profesional y cercano, y mi sonrisa nunca había estado tan alineada y saludable."
+        }
     },
 
     "faq": {
-
+        "title": "Preguntas frecuentes",
+        "body": "Resolvemos las dudas más comunes sobre nuestros tratamientos y servicios, para que tengas toda la información que necesitas antes de tu visita. Queremos que te sientas seguro y bien informado.",
+        "faq1": {
+            "question": "¿Es doloroso el tratamiento de ortodoncia?",
+            "answer": "El tratamiento no es doloroso; puede haber ligeras molestias al inicio, pero desaparecen en pocos días."
+        },
+        "faq2": {
+            "question": "¿Con qué frecuencia debo visitar al dentista?",
+            "answer": " Recomendamos una revisión cada seis meses para mantener tu salud dental y prevenir problemas futuros."
+        },
+        "faq3": {
+            "question": "¿Qué edad es ideal para la ortodoncia?",
+            "answer": "Se recomienda una primera revisión a los 7 años, aunque adultos también pueden recibir tratamiento."
+        },
+        "faq4": {
+            "question": "¿Los implantes dentales son seguros?",
+            "answer": "Sí, son un procedimiento confiable con alta tasa de éxito cuando se usan materiales de calidad."
+        },
+        "faq5": {
+            "question": "¿Aceptan pacientes que nunca han ido al dentista?",
+            "answer": "Claro, atendemos a pacientes de todas las edades, incluso si es su primera visita."
+        },
+        "faq6": {
+            "question": "¿Se realizan tratamientos para niños?",
+            "answer": "Sí, contamos con odontopediatría especializada para brindar una atención amigable y segura."
+        }
     },
 
     "footer": {
-
+        "body": "Trabajamos cada día para brindarte una atención cercana, profesional y de calidad, asegurando bienestar y confianza en cada visita. Tu mejor sonrisa empieza aquí.",
+        "links": "Enlaces rápidos",
+        "social": "Redes sociales",
+        "copyright": "Todos los derechos reservados."
     },
 
     "buttons": {
-
+        "begin": "Comencémos",
+        "more": "Más información"
     },
 
     "metadata": {
-        
+        "title": "Ortodoncia y ortopedia maxilar – Orthosadent",
+        "description": "Atención odontológica especializada en ortodoncia, ortopedia maxilar, implantes y rehabilitación oral. La Dra. Ana Paula Armendáriz ofrece tratamientos personalizados con ética, calidad y calidez para transformar tu sonrisa.",
+        "title_short": "Orthosadent – Ortodoncia y Ortopedia Maxilar"
     }
 }

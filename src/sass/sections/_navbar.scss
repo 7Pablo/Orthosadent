@@ -1,0 +1,104 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../utils/animations' as *;
+
+.navbar {
+    @include flex($direction: row, $justify: space-between);
+    background-color: #ffffff;
+    height: 70px;
+    width: 100%;
+    max-width: 1490px;
+    padding: 10px 40px;
+    box-shadow: 0 6px 12px rgba($color: #000000, $alpha: 0.25);
+    border-radius: 100px;
+
+    /* Animation */
+    animation: flipPillRise 0.8s ease-out forwards;
+    transform-origin: center top;
+
+    &__button {
+        @include flex($direction: row, $gap: 10px);
+        width: fit-content;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        user-select: none;
+        
+        h2 {
+            font-family: $font-logo;
+            font-size: 25px;
+            line-height: 30px;
+            letter-spacing: -2%;
+            color: $gold-dark;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(0.95); 
+        }
+    }
+
+    &__items {
+        @include flex($direction: row, $justify: start, $gap: 40px);
+        list-style-type: none;
+
+        a {
+            @include title-font($size: 16px, $weight: 500);
+            text-decoration: none;
+            cursor: pointer;
+
+            .nav-inner {
+                display: inline-block;
+                transition: transform 0.2s ease-out, color 0.2s ease-out;
+            }
+
+             &:hover .nav-inner {
+                transform: translateY(-2px);
+                color: $gold-primary;
+                font-weight: 600;
+            }
+        }  
+    }
+}
+
+// Resonsive medium
+@include responsive(medium) {
+    .navbar {
+        padding: 10px 30px;
+
+        &__button {
+            h2 {
+                display: none;
+            }
+        }
+
+        &__items {
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// Resonsive smedium
+@include responsive(smedium) {
+    .navbar {
+        &__items {
+            display: none;
+        }
+    }
+}
+
+// Resonsive small
+@include responsive(small) {
+    .navbar {
+        &__button {
+            img {
+                height: auto;
+                width: 35px;
+            }
+        }
+    }
+}

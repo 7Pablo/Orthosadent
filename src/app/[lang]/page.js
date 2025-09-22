@@ -1,9 +1,7 @@
 // page.js (LandingPage/Server component)
 
 import { getTranslations } from "@/locales/translations";
-import { getAssetPath } from "@/utils/getAssetPath";
-import Image from "next/image";
-import AnimatedSection from "@/utils/AnimatedSection";
+import HeroSection from "@/components/sections/HeroSection";
 
 // Metadata
 
@@ -17,6 +15,10 @@ export default async function LandingPage({ params }) {
     return (
         <div className="landing-page">
             {/* Hero */}
+            <HeroSection 
+              trans={trans} 
+              lang={lang}
+            />
 
             {/* Benefits */}
 

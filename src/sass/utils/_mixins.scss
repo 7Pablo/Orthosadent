@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 @mixin title-font($size: 22px, $weight: 700, $color: $gray-dark) {
   font-family: $font-libre;
   font-size: $size;

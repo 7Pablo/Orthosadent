@@ -1,0 +1,26 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.language-button {
+    background-color: #ffffff;
+    padding: 4px;
+    box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1) rotate(10deg);
+    }
+
+    &:active {
+        transform: scale(0.9) rotate(-5deg);
+    }
+}
+
+// Resonsive smedium
+@include responsive(smedium) {
+    .language-button {
+        display: none;
+    }
+}
