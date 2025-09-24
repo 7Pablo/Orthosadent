@@ -1,0 +1,80 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.about-section {
+    @include flex();
+    width: 100%;
+    background-color: #ffffff;
+    overflow-x: clip;
+
+    &__content {
+        @include flex($direction: row, $justify: space-between);
+        position: relative;
+        max-width: 1440px;
+        width: 100%;
+        padding: 80px 50px 80px;
+        z-index: 0;
+        overflow-y: clip;
+    }
+
+    &__left {
+        flex: 1;
+
+        img {
+            filter: drop-shadow(0 12px 12px rgba($gold-primary, 1.0));
+            user-select: none;  
+        }
+    }
+
+    &__right {
+        @include flex($align: start, $gap: 30px);
+        width: fit-content;
+        flex: 1.2;
+
+        &--text {
+            @include flex($align: start, $gap: 30px);
+            text-align: left;
+            z-index: 5;
+
+            h2 {
+                @include title-font($size: 40px, $color: $gold-dark);
+                line-height: 44px;
+                max-width: 450px;
+            }
+        }
+
+        &--body {
+            @include flex($gap: 20px);
+
+            p {
+                @include body-font($size: 18px, $color: $gray-dark);
+                line-height: 22px;
+                max-width: 700px;
+            }
+        }
+
+        &--career {
+            @include flex($direction: row, $justify: start, $gap: 60px);
+            margin-top: 20px;
+            user-select: none;  
+        }
+    }
+
+    &__background {
+        &--left {
+            position: absolute;
+            pointer-events: none;
+            z-index: -1;
+            left: -600px;
+            bottom: -400px;
+        }
+
+        &--right {
+            position: absolute;
+            pointer-events: none;
+            z-index: -1;
+            right: -500px;
+            top: -300px;
+        }
+    }
+}

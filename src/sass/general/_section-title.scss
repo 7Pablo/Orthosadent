@@ -1,0 +1,26 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.section-title {
+    @include body-font($size: 18px, $weight: 500);
+    border-radius: 100px;
+    padding: 6px 26px;
+    width: fit-content;
+    min-width: 150px;
+    
+    h4 {
+        line-height: 20px;
+        text-align: center;
+    }
+}
+        
+
+// Responsive smedium
+@include responsive(smedium) {
+    .section-title{
+        h4 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}

@@ -90,13 +90,14 @@
 @include responsive(small) {
     .ham-dropdown {
         &__content {
-            width: 100%;
+            width: 85vw;
             transform: translateX(-8px);
         }
 
         .chakra-menu__positioner {
-            width: 100%;
-            padding: 0 20px;
+            @include flex();
+            width: 100vw !important;
+            padding: 0 30px;
         }
 
         &__item {

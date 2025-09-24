@@ -1,0 +1,57 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.general-button {
+    &--primary, &--secondary {
+        @include body-font($size: 18px, $weight: 500, $color: $gold-dark);
+        line-height: 20px;
+        letter-spacing: 0.4px;
+
+        background-color: #ffffff;
+        min-width: 150px;
+        padding: 10px 20px; 
+        border: none;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba($gold-dark, 0.5);
+
+        transition: transform 0.2s ease, color 0.2s ease;
+
+        -webkit-user-select: none;
+        -moz-user-select: none; 
+        -ms-user-select: none;    
+        user-select: none;  
+
+        &:hover {
+            transform: translateY(-4px); 
+            box-shadow: 0 8px 10px rgba($gold-dark, 0.5);
+        }
+
+        &:active {
+            transform: translateY(0px); 
+            box-shadow: 0 4px 6px rgba($gold-dark, 0.5);
+        }
+    }
+
+    &--secondary {
+        background-color: $gold-dark;
+        color: #ffffff;
+    }
+
+    &__text {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+     .general-button {
+        &--primary, &--secondary {
+            font-size: 16px;
+            padding: 8px 20px;
+        }
+     }   
+}

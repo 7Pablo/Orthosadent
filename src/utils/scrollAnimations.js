@@ -30,12 +30,6 @@ export const slideFromBottom = {
   exit: { y: 50 },
 };
 
-export const rotateIn = {
-  initial: { opacity: 0, rotate: -10 },
-  animate: { opacity: 1, rotate: 0 },
-  exit: { opacity: 0, rotate: -10 },
-};
-
 export const flipCard = (delay = 0) => ({
   initial: { rotateY: 90, opacity: 0 },  
   animate: {
@@ -51,23 +45,6 @@ export const flipCard = (delay = 0) => ({
   },
   exit: { rotateY: 90, opacity: 0 }, 
 });
-
-export const flipCardVertical = (delay = 0) => ({
-  initial: { rotateX: 90, opacity: 0 },  
-  animate: {
-    rotateX: 0,
-    opacity: 1,
-    transition: {
-      delay,
-      type: 'spring',
-      stiffness: 150,
-      damping: 12,
-      mass: 1,
-    },
-  },
-  exit: { rotateX: 90, opacity: 0 }, 
-});
-
 
 export const bouncyRise = (delay = 0) => ({
   initial: { opacity: 0, y: 50, scale: 0.95 },
@@ -86,34 +63,6 @@ export const bouncyRise = (delay = 0) => ({
   exit: { opacity: 0, y: 50, scale: 0.95 },
 });
 
-export const tickerFadeInUp = {
-  initial: { opacity: 0, y: 40 },   
-  animate: { 
-    opacity: 1, 
-    y: 0, 
-    transition: { duration: 0.8, ease: 'easeOut' } 
-  },
-  exit: { opacity: 0, y: 40 },     
-};
-
-export const riseFromBottom = (delay = 0) => ({
-  initial: { opacity: 0, y: 80 },
-  animate: {
-    opacity: 1,
-    y: [80, -10, 0], 
-    transition: {
-      delay,
-      duration: 0.8,
-      ease: "easeOut"
-    }
-  },
-  exit: {
-    opacity: 0,
-    y: 80,
-    transition: { duration: 0.5, ease: "easeIn" }
-  }
-});
-
 export const bouncingBall = (delay = 0) => ({
   initial: { opacity: 0, y: -50 },
   animate: {
@@ -126,6 +75,41 @@ export const bouncingBall = (delay = 0) => ({
     },
   },
   exit: { opacity: 0, y: -50, transition: { duration: 0.5 } },
+});
+
+// Coin flip effect (like tossing a card in 3D)
+export const coinFlip = (delay = 0) => ({
+  initial: { opacity: 0, rotateY: 180, scale: 0.8 },
+  animate: {
+    opacity: 1,
+    rotateY: 0,
+    scale: 1,
+    transition: {
+      delay,
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  },
+  exit: { opacity: 0, rotateY: 180, scale: 0.8, transition: { duration: 0.5 } },
+});
+
+// Toss effect (like throwing a card onto a table)
+export const cardToss = (delay = 0) => ({
+  initial: { opacity: 0, x: -100, y: -50, rotate: -15, scale: 0.8 },
+  animate: {
+    opacity: 1,
+    x: 0,
+    y: 0,
+    rotate: 0,
+    scale: 1,
+    transition: {
+      delay,
+      type: "spring",
+      stiffness: 120,
+      damping: 10,
+    },
+  },
+  exit: { opacity: 0, x: 100, y: 50, rotate: 15, transition: { duration: 0.6 } },
 });
 
 

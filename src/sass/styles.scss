@@ -6,12 +6,17 @@
 // Sections
 @use './sections/navbar' as *;
 @use './sections/hero-section' as *;
+@use './sections/benefits-section' as *;
+@use './sections/about-section' as *;
 
 // General
+@use './general/section-title' as *;
 
 // Cards
+@use './cards/benefits-card' as *;
 
 // Buttons
+@use './buttons/general-button' as *;
 @use './buttons/language-button' as *;
 @use './buttons/ham-drowpdown' as *;
 

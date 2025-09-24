@@ -119,3 +119,20 @@
     transform: rotateX(0deg) translateY(0);
   }
 }
+
+@keyframes slideBounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(20px); 
+  }
+  80% {
+    transform: translateX(-10px); 
+  }
+  100% {
+    transform: translateX(0); 
+  }
+}

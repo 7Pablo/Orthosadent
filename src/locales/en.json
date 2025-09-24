@@ -19,7 +19,7 @@
 
     "benefits": {
        "title": "Your dental health in the best hands",
-       "body": "In our practice we take care of your dental health with trust, precision, and warmth, ensuring effective results. Here are some of the benefits you will find with us.",
+       "body": "In our dental office we take care of your dental health with trust, precision, and warmth, ensuring effective results. Here are some of the benefits you will find with us.",
        "card1": {
         "image": "Tooth icon",
         "title": "Comprehensive Care",
@@ -168,8 +168,8 @@
     },
 
     "buttons": {
-        "begin": "Get Started",
-        "more": "Learn More"
+        "begin": "Get started",
+        "more": "Learn more"
     },
 
     "metadata": {
