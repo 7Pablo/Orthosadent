@@ -4,6 +4,7 @@ import { getTranslations } from "@/locales/translations";
 import HeroSection from "@/components/sections/HeroSection";
 import BenefitsSection from "@/components/sections/BenefitsSection";
 import AboutSection from "@/components/sections/AboutSection";
+import ServicesSection from "@/components/sections/ServicesSection";
 
 // Metadata
 
@@ -33,6 +34,9 @@ export default async function LandingPage({ params }) {
             />
 
             {/* Services */}
+            <ServicesSection
+              trans={trans}
+            />
 
             {/* Contact */}
 

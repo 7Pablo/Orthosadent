@@ -8,12 +8,15 @@
 @use './sections/hero-section' as *;
 @use './sections/benefits-section' as *;
 @use './sections/about-section' as *;
+@use './sections/services-section' as *;
 
 // General
 @use './general/section-title' as *;
+@use './general/services-scroller' as *;
 
 // Cards
 @use './cards/benefits-card' as *;
+@use './cards/services-card' as *;
 
 // Buttons
 @use './buttons/general-button' as *;

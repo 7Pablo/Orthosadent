@@ -77,7 +77,6 @@ export const bouncingBall = (delay = 0) => ({
   exit: { opacity: 0, y: -50, transition: { duration: 0.5 } },
 });
 
-// Coin flip effect (like tossing a card in 3D)
 export const coinFlip = (delay = 0) => ({
   initial: { opacity: 0, rotateY: 180, scale: 0.8 },
   animate: {
@@ -93,7 +92,6 @@ export const coinFlip = (delay = 0) => ({
   exit: { opacity: 0, rotateY: 180, scale: 0.8, transition: { duration: 0.5 } },
 });
 
-// Toss effect (like throwing a card onto a table)
 export const cardToss = (delay = 0) => ({
   initial: { opacity: 0, x: -100, y: -50, rotate: -15, scale: 0.8 },
   animate: {
@@ -112,4 +110,17 @@ export const cardToss = (delay = 0) => ({
   exit: { opacity: 0, x: 100, y: 50, rotate: 15, transition: { duration: 0.6 } },
 });
 
-
+export const elegantReveal = (delay = 0) => ({
+  initial: { opacity: 0, y: 40, rotate: 2 },
+  animate: {
+    opacity: 1,
+    y: 0,
+    rotate: 0,
+    transition: {
+      delay,
+      duration: 1,
+      ease: [0.25, 0.1, 0.25, 1], 
+    },
+  },
+  exit: { opacity: 0, y: 40, rotate: -2 },
+});

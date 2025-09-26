@@ -1,0 +1,113 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.services-scroller {
+  @include flex($direction: row);
+  height: fit-content;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  margin-top: 10px;
+
+  &__slide {
+    @include flex();
+    transition: transform 0.3s ease;
+    transform: scale(0.85);
+  }
+
+  .swiper {
+    @include flex();
+    width: 100% !important;
+    padding-bottom: 60px;
+
+    &-slide {
+      @include flex();
+
+      &-wrapper {
+        @include flex();
+      }
+    }
+  }
+
+  .swiper-pagination {  
+    .swiper-pagination-bullet {
+        background-color: black; 
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #fff;
+    }
+  }
+
+  .swiper-slide-active .slider__slide-inner {
+    transform: scale(1);
+  }
+
+  &__button {
+    &--next, &--prev {
+        cursor: pointer;
+        margin-bottom: 60px;
+        transition: all 0.2s ease;
+        width: fit-content;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+  }
+}
+
+// Responsive large 
+@include responsive(large) {
+  .slider {
+    max-width: 1080px;
+
+    .swiper {
+      &-slide {
+        &-prev, &-next {
+          width: fit-content !important;
+        }
+      }
+    }
+  }
+}
+
+// Responsive medium
+@include responsive(medium) {
+  .slider {
+    .swiper {
+      &-slide {
+        width: 400px !important;
+      }
+
+      &-wrapper {
+        width: 400px !important;
+      }
+    }
+  }
+}
+
+// Responsive small
+@include responsive(small) {
+  .slider {
+    .swiper {
+      &-slide {
+        width: 325px !important;
+      }
+
+      &-wrapper {
+        width: 325px !important;
+      }
+    }
+
+    &__button {
+      &--next, &--prev {
+        display: none;
+      }
+    }
+  }
+}
