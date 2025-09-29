@@ -2,7 +2,217 @@
 @use '../utils/mixins' as *;
 
 .services-card {
+    @include flex($justify: space-between);
+    background-color: $background;
     position: relative;
-    width: 400px;
-    height: 550px;
+    width: 350px;
+    height: 500px;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba($color: #000000, $alpha: 0.25);
+
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+        transform: scale(0.97);
+    }
+
+    &:active {
+        transform: scale(0.92);
+    }
+
+    &__image {
+        flex: 1.2;
+        position: relative;
+        width: 100%;
+        height: 60%;
+
+        -webkit-user-select: none;
+        -moz-user-select: none; 
+        -ms-user-select: none;    
+        user-select: none;  
+
+        img {
+            filter: brightness(0.8);
+        }
+    }
+
+    &__text {
+        @include flex($gap: 10px);
+        padding: 30px;
+
+        h2 {
+            @include title-font($size: 20px, $color: #000000);
+            line-height: 30px;
+        }
+
+        p {
+            @include body-font($size: 16px, $color: $gray-dark);
+            line-height: 20px;
+        }
+    }
+}
+
+.services-pop {
+    @include flex($justify: space-between);
+    background-color: $background;
+    height: 600px;
+    max-width: 550px;
+    width: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+
+    &__close {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        z-index: 10;
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
+        &:hover {
+            transform: scale(0.95);
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+
+    &__image {
+        flex: 1.4;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        user-select: none;
+
+        img {
+            filter: brightness(0.75);
+        }
+    }
+
+    &__wrapper {
+        flex: 1;
+        @include flex();
+        padding: 30px;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__content {
+        @include flex($justify: start, $gap: 20px);
+        white-space: pre-line; 
+
+        h2 {
+            @include title-font($size: 25px, $color: #000000);
+            line-height: 30px;
+        }
+
+        &--text {
+            overflow-y: scroll;
+            scrollbar-width: none;   
+            -ms-overflow-style: none; 
+
+            &::-webkit-scrollbar {
+                display: none;   
+            }
+            
+            p {
+                @include body-font($size: 16px, $color: $gray-dark);
+                text-align: center;
+                line-height: 22px;
+                max-height: 350px;
+            }
+        }
+    }
+}
+
+.chakra-dialog__trigger {
+    width: 100%;
+}
+
+.chakra-dialog__positioner {
+    @include flex();
+}
+
+.chakra-dialog__backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.chakra-dialog__content {
+    @include flex();
+    position: relative;
+    max-width: 550px;
+    width: 100%;
+    height: fit-content;
+    max-height: 100vh;
+    margin: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+// Responsive smedium
+@include responsive(smedium) {
+    .services-card {
+        border-radius: 30px;
+    }
+
+    .services-pop {
+        border-radius: 30px;
+
+        &__wrapper {
+            padding: 30px 20px;
+        }
+
+        &__close {
+            right: 70px;
+        }
+
+        &__content {
+            gap: 10px;
+
+            h2 {
+                font-size: 23px;
+                line-height: 23px;
+            }
+
+            &--text {
+                p {
+                    font-size: 14px;
+                    line-height: 18px;
+                    max-height: 250px;
+                }
+            }
+        }
+    }
+
+    .chakra-dialog__content {
+        padding: 0 40px;
+    }
+}
+
+// Responsive small 
+@include responsive(small) {
+    .services-card {
+        width: 100%;
+    }
+
+    .services-pop {
+        &__close {
+            right: 55px;
+            top: 25px;
+        }
+    }
+
+    .chakra-dialog__content {
+        padding: 0 30px;
+    }
+
+    .icon {
+        width: 22px !important;
+        height: 22px !important;
+    }
 }

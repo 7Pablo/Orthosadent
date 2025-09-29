@@ -3,22 +3,23 @@
 
 .services-scroller {
   @include flex($direction: row);
+  position: relative;
   height: fit-content;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1025px;
   position: relative;
   margin-top: 10px;
 
   &__slide {
     @include flex();
     transition: transform 0.3s ease;
-    transform: scale(0.85);
+    transform: scale(0.75);
   }
 
   .swiper {
     @include flex();
     width: 100% !important;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
 
     &-slide {
       @include flex();
@@ -31,82 +32,106 @@
 
   .swiper-pagination {  
     .swiper-pagination-bullet {
-        background-color: black; 
+        background-color: $gold-dark; 
+        width: 30px;
+        border-radius: 100px;
+        transition: all 0.3s ease;
+        opacity: 0.4;
+        height: 5px;
     }
 
     .swiper-pagination-bullet-active {
-        background-color: #fff;
+        background-color: $gold-dark;
+        width: 70px;
+        border-radius: 100px;
+        opacity: 1;
     }
   }
 
-  .swiper-slide-active .slider__slide-inner {
+  .swiper-slide-active .services-scroller__slide {
     transform: scale(1);
   }
 
   &__button {
     &--next, &--prev {
-        cursor: pointer;
-        margin-bottom: 60px;
-        transition: all 0.2s ease;
+        @include flex();
+        position: absolute;
+        top: 45%;
         width: fit-content;
+        background-color: rgba($color: #ffffff, $alpha: 0.5);
+        border-radius: 100%;
+        transform: translateY(-45%);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+  
+        transition: all 0.2s ease;
+        cursor: pointer;
+        z-index: 10;
 
         &:hover {
-            transform: scale(1.1);
+          transform: translateY(-45%) scale(0.9);
         }
 
         &:active {
-            transform: scale(0.95);
+          transform: translateY(-45%) scale(0.8);
         }
+    }
+
+    &--next {
+      right: 6px;
+
+      svg {
+        padding-left: 5px;
+      }
+    }
+
+    &--prev {
+      left: 6px;
+
+      svg {
+        padding-right: 5px;
+      }
     }
   }
 }
 
 // Responsive large 
-@include responsive(large) {
-  .slider {
-    max-width: 1080px;
-
-    .swiper {
-      &-slide {
-        &-prev, &-next {
-          width: fit-content !important;
-        }
-      }
-    }
-  }
-}
-
-// Responsive medium
 @include responsive(medium) {
-  .slider {
-    .swiper {
-      &-slide {
-        width: 400px !important;
-      }
+  .services-scroller {
+    max-width: 500px;
 
-      &-wrapper {
-        width: 400px !important;
-      }
-    }
-  }
-}
-
-// Responsive small
-@include responsive(small) {
-  .slider {
-    .swiper {
-      &-slide {
-        width: 325px !important;
-      }
-
-      &-wrapper {
-        width: 325px !important;
-      }
+    &__slide {
+      transform: scale(1);
     }
 
     &__button {
       &--next, &--prev {
         display: none;
+      }
+    }
+  }
+}
+
+// Responsive smedium
+@include responsive(smedium) {
+  .services-scroller {
+    width: 350px;
+  }
+}
+
+// Responsive small
+@include responsive(small) {
+  .services-scroller {
+    width: calc(100vw - 60px);
+    max-width: 350px;
+
+    .swiper-pagination {  
+      .swiper-pagination-bullet {
+          width: 20px;
+      }
+
+      .swiper-pagination-bullet-active {
+          width: 60px;
       }
     }
   }

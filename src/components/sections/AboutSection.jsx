@@ -19,7 +19,7 @@ export default function AboutSection({ trans }) {
                             width={475}
                         />
                     </AnimatedSection>
-                    <AnimatedSection animation="fadeInUp" delay={0.4}>
+                    <AnimatedSection animation="fadeInUp" delay={0.2}>
                         <div className="about-section__left--career">
                             <Image
                                 src={getAssetPath("/images/central.png")}
@@ -38,28 +38,28 @@ export default function AboutSection({ trans }) {
                 </div>
                 <div className="about-section__right">
                     <div className="about-section__right--text">
-                        <AnimatedSection animation="slideFromLeft" delay={0.2}>
+                        <AnimatedSection animation="slideFromRight" delay={0.2}>
                             <SectionTitle
                                 text={trans.navbar.about}
                                 color="#C0AA72"
                             />
                         </AnimatedSection>
-                        <AnimatedSection animation="slideFromLeft" delay={0.4}>
+                        <AnimatedSection animation="slideFromRight" delay={0.4}>
                             <h2>Ana Paula Armendáriz Salas</h2>
                         </AnimatedSection>
                         <div className="about-section__right--body">
-                            <AnimatedSection animation="slideFromLeft" delay={0.6}>
+                            <AnimatedSection animation="slideFromRight" delay={0.6}>
                                 <p>{trans.about.body1}</p>
                             </AnimatedSection>
-                            <AnimatedSection animation="slideFromLeft" delay={0.8}>
+                            <AnimatedSection animation="slideFromRight" delay={0.8}>
                                 <p>{trans.about.body2}</p>
                             </AnimatedSection>
-                            <AnimatedSection animation="slideFromLeft" delay={1}>
+                            <AnimatedSection animation="slideFromRight" delay={1}>
                                 <p>{trans.about.body3}</p>
                             </AnimatedSection>
                         </div>
                     </div>
-                    <AnimatedSection animation="slideFromLeft" delay={1.2}>
+                    <AnimatedSection animation="slideFromRight" delay={1.2}>
                         <div className="about-section__right--button">
                             <GeneralButton
                                 type="secondary"
@@ -69,7 +69,7 @@ export default function AboutSection({ trans }) {
                             </GeneralButton>
                         </div>
                     </AnimatedSection>
-                    <AnimatedSection animation="fadeInUp" delay={0.4}>
+                    <AnimatedSection animation="fadeInUp" delay={1.4}>
                         <div className="about-section__right--career">
                             <Image
                                 src={getAssetPath("/images/central.png")}

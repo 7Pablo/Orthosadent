@@ -1,31 +1,39 @@
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
 
-.services-section {
+.contact-section {
     @include flex();
     width: 100%;
-    background: linear-gradient(to bottom,rgba($gold-dark, 0.8) 30%, rgba($gold-secondary, 0.8) 70%);
 
     &__content {
         @include flex($gap: 40px);
         padding: 60px 50px;
-        position: relative;
     }
 
-    &__top {
+    &__left {
         @include flex($gap: 30px);
         text-align: center;
+        text-align: left;
 
-        h2 {
-            @include title-font($size: 40px, $color: #ffffff);
-            line-height: 44px;
-            max-width: 500px;
+        &--text {
+            @include flex($align: start, $gap: 30px);
+
+            h2 {
+                @include title-font($size: 40px, $color: $gold-dark);
+                line-height: 44px;
+                max-width: 500px;
+            }
+
+            h3 {
+                @include body-font($size: 20px, $color: $gold-dark);
+                line-height: 24px;
+                max-width: 600px; 
+            }
         }
 
-        h3 {
-            @include body-font($size: 20px, $color: #ffffff);
-            line-height: 24px;
-            max-width: 700px;
+        img {
+            filter: drop-shadow(0 12px 12px rgba($gold-primary, 1.0));
+            user-select: none;  
         }
     }
 }

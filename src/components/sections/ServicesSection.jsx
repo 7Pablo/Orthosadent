@@ -10,49 +10,49 @@ export default function ServicesSection({ trans }) {
     // Services
     const services = [
        {
-        img: getAssetPath("/pictures/about-image.webp"),
+        img: getAssetPath("/pictures/ortodoncia.webp"),
         alt: `${trans.services.service1.image}`,
         title: `${trans.services.service1.title}`,
         bodyShort: `${trans.services.service1.short}`,
         bodyLong: `${trans.services.service1.body}`,
        },
        {
-        img: getAssetPath("/pictures/about-image.webp"),
+        img: getAssetPath("/pictures/odontologia.webp"),
         alt: `${trans.services.service2.image}`,
         title: `${trans.services.service2.title}`,
         bodyShort: `${trans.services.service2.short}`,
         bodyLong: `${trans.services.service2.body}`,
        },
        {
-        img: getAssetPath("/pictures/about-image.webp"),
+        img: getAssetPath("/pictures/rehabilitacion.webp"),
         alt: `${trans.services.service3.image}`,
         title: `${trans.services.service3.title}`,
         bodyShort: `${trans.services.service3.short}`,
         bodyLong: `${trans.services.service3.body}`,
        },
        {
-        img: getAssetPath("/pictures/about-image.webp"),
+        img: getAssetPath("/pictures/cirugia.webp"),
         alt: `${trans.services.service4.image}`,
         title: `${trans.services.service4.title}`,
         bodyShort: `${trans.services.service4.short}`,
         bodyLong: `${trans.services.service4.body}`,
        },
        {
-        img: getAssetPath("/pictures/about-image.webp"),
+        img: getAssetPath("/pictures/implantologia.webp"),
         alt: `${trans.services.service5.image}`,
         title: `${trans.services.service5.title}`,
         bodyShort: `${trans.services.service5.short}`,
         bodyLong: `${trans.services.service5.body}`,
        },
        {
-        img: getAssetPath("/pictures/about-image.webp"),
+        img: getAssetPath("/pictures/odontopediatria.webp"),
         alt: `${trans.services.service6.image}`,
         title: `${trans.services.service6.title}`,
         bodyShort: `${trans.services.service6.short}`,
         bodyLong: `${trans.services.service6.body}`,
        },
        {
-        img: getAssetPath("/pictures/about-image.webp"),
+        img: getAssetPath("/pictures/endodoncia.webp"),
         alt: `${trans.services.service7.image}`,
         title: `${trans.services.service7.title}`,
         bodyShort: `${trans.services.service7.short}`,
@@ -60,8 +60,11 @@ export default function ServicesSection({ trans }) {
        },
     ];
 
+    // Arrays repetidos
+    const repeatedServices = [...services, ...services]; 
+
     return (
-        <div className="services-section">
+        <section id="services" className="services-section">
             <div className="services-section__content">
                 <AnimatedSection animation="fadeInUp" delay={0.2}>
                     <div className="services-section__top">
@@ -73,10 +76,12 @@ export default function ServicesSection({ trans }) {
                         <h3>{trans.services.body}</h3>
                     </div>
                 </AnimatedSection>
-                <ServicesScroller
-                    slides={services}
-                />
+                <AnimatedSection animation="bouncyRise" delay={0.2}>
+                    <ServicesScroller
+                        slides={repeatedServices}
+                    />
+                </AnimatedSection>
             </div>
-        </div>
+        </section>
     );
 }

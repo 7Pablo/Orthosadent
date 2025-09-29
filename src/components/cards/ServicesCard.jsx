@@ -28,14 +28,16 @@ export default function ServicesCard({ img, alt, title, bodyShort, bodyLong }) {
                 <Dialog.Backdrop />
                 <Dialog.Positioner>
                     <Dialog.Content>
-                        <div className="services-pop__close">
-                            <Image
-                                src={getAssetPath("/icons/close.svg")}
-                                alt="x"
-                                width={20}
-                                height={20}
-                            />
-                        </div>
+                        <Dialog.CloseTrigger asChild>
+                            <div className="services-pop__close">
+                                <Image
+                                    src={getAssetPath("/icons/close.png")}
+                                    alt="x"
+                                    width={20}
+                                    height={20}
+                                />
+                            </div>
+                        </Dialog.CloseTrigger>
                         <div className="services-pop">
                             <div className="services-pop__image">
                                 <Image

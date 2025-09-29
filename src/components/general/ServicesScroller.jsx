@@ -49,7 +49,7 @@ export default function ServicesScroller({ slides }) {
             <Swiper
                 modules={[Autoplay, Navigation, Pagination]}
                 slidesPerView={slidesPerView}
-                spaceBetween={10}
+                spaceBetween={30}
                 centeredSlides={slidesPerView > 1}
                 loop={true}
                 autoplay={{
@@ -57,8 +57,8 @@ export default function ServicesScroller({ slides }) {
                     disableOnInteraction: true,
                 }}
                 navigation={{
-                    nextEl: '.services-scroller--next',  
-                    prevEl: '.services-scroller--prev',  
+                    nextEl: '.services-scroller__button--next',  
+                    prevEl: '.services-scroller__button--prev',  
                 }}
                 pagination={{
                     clickable: true,
