@@ -6,6 +6,7 @@ import BenefitsSection from "@/components/sections/BenefitsSection";
 import AboutSection from "@/components/sections/AboutSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import ContactSection from "@/components/sections/ContactSection";
+import ReviewsSection from "@/components/sections/ReviewsSection";
 
 // Metadata
 
@@ -45,6 +46,9 @@ export default async function LandingPage({ params }) {
             />
 
             {/* Reviews */}
+            <ReviewsSection
+              trans={trans} 
+            />
 
             {/* FAQ */}
 

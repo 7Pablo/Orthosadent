@@ -110,7 +110,8 @@
             "title": "Horario de atención",
             "monday": "Lunes a viernes",
             "saturday": "Sábado"
-        }
+        },
+        "message": "Hola, estoy interesado en sus servicios. ¿Podría brindarme más información?"
     },
 
     "reviews": {
@@ -119,15 +120,15 @@
         "image": "Imagen del paciente",
         "card1": {
             "month": "Diciembre",
-            "title": "La dra. Ana Pau me acompañó en todo mi proceso de cirugía ortognática, siempre con amabilidad y compromiso. A pesar de lo complejo de mi caso, estuvo al pendiente y trabajando junto a otros especialistas para que todo saliera bien."
+            "review": "La dra. Ana Pau me acompañó en todo mi proceso de cirugía ortognática, siempre con amabilidad y compromiso. A pesar de lo complejo de mi caso, estuvo al pendiente y trabajando junto a otros especialistas para que todo saliera bien."
         },
         "card2": {
             "month": "Enero",
-            "title": "Atención personalizada y resultados visibles desde las primeras visitas. Recomiendo Orthosadent a toda mi familia por su profesionalismo y cercanía."
+            "review": "Atención personalizada y resultados visibles desde las primeras visitas. Recomiendo Orthosadent a toda mi familia por su profesionalismo y cercanía."
         },
         "card3": {
             "month": "Septiembre",
-            "title": "Excelente atención desde la primera cita. El equipo fue muy profesional y cercano, y mi sonrisa nunca había estado tan alineada y saludable."
+            "review": "Excelente atención desde la primera cita. El equipo fue muy profesional y cercano, y mi sonrisa nunca había estado tan alineada y saludable."
         }
     },
 

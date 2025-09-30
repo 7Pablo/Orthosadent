@@ -718,11 +718,13 @@
 }
 .contact-section__content {
   display: flex;
-  flex-direction: column;
-  gap: 40px;
+  flex-direction: row;
+  gap: 100px;
   align-items: center;
   justify-content: center;
-  padding: 60px 50px;
+  padding: 60px 50px 80px;
+  width: 100%;
+  max-width: 1300px;
 }
 .contact-section__left {
   display: flex;
@@ -730,7 +732,6 @@
   gap: 30px;
   align-items: center;
   justify-content: center;
-  text-align: center;
   text-align: left;
 }
 .contact-section__left--text {
@@ -762,22 +763,38 @@
   filter: drop-shadow(0 12px 12px #c0aa72);
   user-select: none;
 }
+.contact-section__right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
 
 @media (max-width: 1200px) {
-  .services-section__content {
-    padding: 60px 40px;
+  .contact-section__content {
+    gap: 60px;
+    padding: 60px 40px 80px;
   }
 }
 @media (max-width: 800px) {
-  .services-section__top h3 {
+  .contact-section__content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-section__left h3 {
     font-size: 18px;
     line-height: 20px;
   }
-  .services-section__top h2 {
+  .contact-section__left h2 {
     font-size: 40px;
     line-height: 44px;
   }
-  .services-section__cards {
+  .contact-section__cards {
     display: grid;
     grid-template-columns: repeat(1, 300px);
     grid-template-rows: auto auto;
@@ -786,10 +803,80 @@
   }
 }
 @media (max-width: 550px) {
-  .services-section__content {
+  .contact-section__content {
     padding: 60px 30px;
   }
-  .services-section__top h2 {
+  .contact-section__left h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+.reviews-section__content {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 50px 80px;
+  width: 100%;
+  max-width: 1440px;
+}
+.reviews-section__top {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.reviews-section__top h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #846A2F;
+  line-height: 50px;
+  line-height: 44px;
+  max-width: 600px;
+}
+.reviews-section__top h3 {
+  font-family: "Montserrat ", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #2B2B2B;
+  line-height: 30px;
+  line-height: 24px;
+  max-width: 700px;
+}
+
+@media (max-width: 1200px) {
+  .reviews-section__content {
+    padding: 60px 40px 80px;
+  }
+}
+@media (max-width: 800px) {
+  .reviews-section__top h3 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .reviews-section__top h2 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+@media (max-width: 550px) {
+  .reviews-section__content {
+    padding: 60px 30px;
+  }
+  .reviews-section__top h2 {
     font-size: 30px;
     line-height: 34px;
   }
@@ -1204,6 +1291,74 @@
     height: 22px !important;
   }
 }
+.contact-card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: start;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 12px 12px #cebd84;
+  max-width: 500px;
+  width: 100%;
+  padding: 18px 30px;
+  white-space: pre-line;
+}
+.contact-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: start;
+  justify-content: center;
+}
+.contact-card__info h3 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 28px;
+  line-height: 22px;
+}
+.contact-card__info p {
+  font-family: "Montserrat ", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #2B2B2B;
+  line-height: 28px;
+  line-height: 22px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.contact-card img {
+  user-select: none;
+}
+.contact-card--clickable {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.contact-card--clickable:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px #cebd84;
+}
+.contact-card--clickable:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px #cebd84;
+}
+
+@media (max-width: 550px) {
+  .contact-card {
+    padding: 18px 20px;
+  }
+  .contact-card__info h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .contact-card__info p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 .general-button--primary, .general-button--secondary {
   font-family: "Montserrat ", sans-serif;
   font-size: 18px;
@@ -1401,4 +1556,5 @@ body {
 
 .animated-section {
   width: 100%;
+  display: block;
 }/*# sourceMappingURL=styles.css.map */

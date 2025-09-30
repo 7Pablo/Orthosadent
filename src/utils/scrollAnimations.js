@@ -124,3 +124,20 @@ export const elegantReveal = (delay = 0) => ({
   },
   exit: { opacity: 0, y: 40, rotate: -2 },
 });
+
+// utils/scrollAnimations.js
+
+export const waveRise = (index = 0, delayStep = 0.15) => ({
+  initial: { opacity: 0, y: 50 },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: index * delayStep, 
+      type: "spring",
+      stiffness: 120,
+      damping: 14,
+    },
+  },
+  exit: { opacity: 0, y: 50 },
+});

@@ -6,13 +6,14 @@
     width: 100%;
 
     &__content {
-        @include flex($gap: 40px);
-        padding: 60px 50px;
+        @include flex($direction: row, $gap: 100px);
+        padding: 60px 50px 80px;
+        width: 100%;
+        max-width: 1300px;
     }
 
     &__left {
         @include flex($gap: 30px);
-        text-align: center;
         text-align: left;
 
         &--text {
@@ -36,21 +37,31 @@
             user-select: none;  
         }
     }
+
+    &__right {
+        @include flex($gap: 30px);
+        width: fit-content;
+    }
 }
 
 // Responsive medium
 @include responsive(medium) {
-    .services-section {
+    .contact-section {
         &__content {
-            padding: 60px 40px;
+            gap: 60px;
+            padding: 60px 40px 80px;
         }
     }
 }
 
 // Responsive smedium
 @include responsive(smedium) {
-    .services-section {
-        &__top {
+    .contact-section {
+        &__content  {
+            @include flex($gap: 60px);
+        }
+
+        &__left {
             h3 {
                 font-size: 18px;
                 line-height: 20px;
@@ -71,12 +82,12 @@
 
 // Responsive small
 @include responsive(small) {
-    .services-section {
+    .contact-section {
         &__content {
             padding: 60px 30px;
         }
 
-        &__top {
+        &__left {
             h2 {
                 font-size: 30px;
                 line-height: 34px;

@@ -10,15 +10,18 @@
 @use './sections/about-section' as *;
 @use './sections/services-section' as *;
 @use './sections/contact-section' as *;
+@use './sections/reviews-section' as *;
 
 // General
 @use './general/section-title' as *;
 @use './general/services-scroller' as *;
+@use './general/reviews-scroller' as *;
 
 // Cards
 @use './cards/benefits-card' as *;
 @use './cards/services-card' as *;
-
+@use './cards/contact-card' as *;
+@use './cards/reviews-card' as *;
 // Buttons
 @use './buttons/general-button' as *;
 @use './buttons/language-button' as *;
@@ -60,5 +63,6 @@ body {
 }
 
 .animated-section {
-    width: 100%;
+  width: 100%;
+  display: block;
 }

@@ -110,7 +110,8 @@
             "title": "Opening hours",
             "monday": "Monday to Friday",
             "saturday": "Saturday"
-        }
+        },
+        "message": "Hello, I am interested in your services. Could you please provide me with more information?"
     },
 
     "reviews": {
@@ -119,15 +120,15 @@
         "image": "Patient image",
         "card1": {
             "month": "December",
-            "title": "Dr. Ana Pau accompanied me throughout my orthognathic surgery process, always with kindness and commitment. Despite the complexity of my case, she was attentive and worked together with other specialists to ensure everything went well."
+            "review": "La Dra. Ana Pau me acompañó durante mi cirugía ortognática con gran profesionalismo y amabilidad. Siempre estuvo al pendiente y trabajando junto a otros especialistas para lograr los mejores resultados. Estoy muy agradecida por su atención."
         },
         "card2": {
             "month": "January",
-            "title": "Personalized care and visible results from the first visits. I recommend Orthosadent to my entire family for their professionalism and warmth."
+            "review": "Personalized care and visible results from the first visits. I recommend Orthosadent to my entire family for their professionalism and warmth."
         },
         "card3": {
             "month": "September",
-            "title": "Excellent care from the very first appointment. The team was very professional and kind, and my smile has never been so aligned and healthy."
+            "review": "Excellent care from the very first appointment. The team was very professional and kind, and my smile has never been so aligned and healthy."
         }
     },
 
