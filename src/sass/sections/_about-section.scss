@@ -65,6 +65,8 @@
     }
 
     &__background {
+        user-select: none;
+        
         &--left {
             position: absolute;
             pointer-events: none;

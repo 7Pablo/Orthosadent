@@ -7,6 +7,7 @@ import AboutSection from "@/components/sections/AboutSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import ContactSection from "@/components/sections/ContactSection";
 import ReviewsSection from "@/components/sections/ReviewsSection";
+import FaqSection from "@/components/sections/FaqSection";
 
 // Metadata
 
@@ -51,7 +52,9 @@ export default async function LandingPage({ params }) {
             />
 
             {/* FAQ */}
-
+            <FaqSection
+              trans={trans}
+            />
         </div>
     );
 }

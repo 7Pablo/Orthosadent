@@ -5,12 +5,16 @@
     @include flex();
     width: 100%;
     background-color: #ffffff;
+    overflow-x: clip;
 
     &__content {
-        @include flex($direction: row, $gap: 100px);
-        padding: 60px 50px 80px;
+        @include flex($gap: 50px);
+        position: relative;
+        padding: 60px 50px;
         width: 100%;
         max-width: 1440px;
+        z-index: 0;
+        overflow-y: clip;
     }
 
     &__top {
@@ -29,13 +33,33 @@
             max-width: 700px;
         }
     }
+
+    &__background {
+        user-select: none;
+        
+        &--left {
+            position: absolute;
+            pointer-events: none;
+            z-index: -1;
+            left: -500px;
+            top: -300px;
+        }
+
+        &--right {
+            position: absolute;
+            pointer-events: none;
+            z-index: -1;
+            right: -500px;
+            bottom: -300px;
+        }
+    }
 }
 
 // Responsive medium
 @include responsive(medium) {
     .reviews-section {
         &__content {
-            padding: 60px 40px 80px;
+            padding: 60px 40px;
         }
     }
 }
@@ -68,6 +92,18 @@
             h2 {
                 font-size: 30px;
                 line-height: 34px;
+            }
+        }
+
+        &__background {
+            &--left {
+                left: -400px;
+                top: -400px;
+            }
+
+            &--right {
+                right: -400px;
+                bottom: -400px;
             }
         }
     }

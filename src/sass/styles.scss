@@ -11,17 +11,20 @@
 @use './sections/services-section' as *;
 @use './sections/contact-section' as *;
 @use './sections/reviews-section' as *;
+@use './sections/faq-section' as *;
 
 // General
 @use './general/section-title' as *;
 @use './general/services-scroller' as *;
 @use './general/reviews-scroller' as *;
+@use './general/faq-accordion' as *;
 
 // Cards
 @use './cards/benefits-card' as *;
 @use './cards/services-card' as *;
 @use './cards/contact-card' as *;
 @use './cards/reviews-card' as *;
+
 // Buttons
 @use './buttons/general-button' as *;
 @use './buttons/language-button' as *;

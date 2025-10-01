@@ -2,5 +2,58 @@
 @use '../utils/mixins' as *;
 
 .reviews-scroller {
-    
+    max-width: 1050px;
+    height: fit-content;
+
+    .swiper-slide {
+        @include flex();
+    }
+
+    &__buttons {
+        @include flex($direction: row, $gap: 15px);
+        margin: 30px 0;
+
+        &--next, &--prev {
+            @include flex();
+            border-radius: 50%;
+            border: 2px solid $gold-primary;
+            background-color: #ffff;
+            color: $gold-primary;
+            box-shadow: 0 4px 4px rgba(#000000, 0.25); 
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        &--next {
+            &:hover {
+                transform: translateX(4px);
+                box-shadow: 0 6px 8px rgba(#000000, 0.5);
+            }
+        }
+
+        &--prev {
+            &:hover {
+                transform: translateX(-4px);
+                box-shadow: 0 6px 8px rgba(#000000, 0.5);
+            }
+        }
+    }
+}
+
+// Responsive medium
+@include responsive(medium) {
+    .reviews-scroller {
+        max-width: 300px;
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .reviews-scroller {
+        max-width: 100vw;
+
+        &__buttons {
+            margin: 20px 0;
+        }
+    }
 }

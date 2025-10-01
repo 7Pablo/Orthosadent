@@ -125,8 +125,6 @@ export const elegantReveal = (delay = 0) => ({
   exit: { opacity: 0, y: 40, rotate: -2 },
 });
 
-// utils/scrollAnimations.js
-
 export const waveRise = (index = 0, delayStep = 0.15) => ({
   initial: { opacity: 0, y: 50 },
   animate: {
@@ -141,3 +139,13 @@ export const waveRise = (index = 0, delayStep = 0.15) => ({
   },
   exit: { opacity: 0, y: 50 },
 });
+
+export const tickerFadeInUp = {
+  initial: { opacity: 0, y: 40 },   
+  animate: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { duration: 0.8, ease: 'easeOut' } 
+  },
+  exit: { opacity: 0, y: 40 },     
+};

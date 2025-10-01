@@ -13,19 +13,19 @@ export default function ReviewsSection({ trans }) {
        {
         img: getAssetPath("/pictures/review1.jpg"),
         name: "Eldabeth Hernández",
-        period: `${trans.reviews.card1.month} 2025`,
+        period: `${trans.reviews.card1.month} 2023`,
         review: `${trans.reviews.card1.review}`
        },
        {
         img: getAssetPath("/pictures/review1.jpg"),
         name: "Eldabeth Hernández",
-        period: `${trans.reviews.card1.month} 2025`,
+        period: `${trans.reviews.card1.month} 2023`,
         review: `${trans.reviews.card1.review}`
        },
        {
         img: getAssetPath("/pictures/review1.jpg"),
         name: "Eldabeth Hernández",
-        period: `${trans.reviews.card1.month} 2025`,
+        period: `${trans.reviews.card1.month} 2023`,
         review: `${trans.reviews.card1.review}`
        },
     ];
@@ -51,6 +51,24 @@ export default function ReviewsSection({ trans }) {
                         slides={repeatedReviews}
                     />
                 </AnimatedSection>
+                <div className="reviews-section__background">
+                    <div className="reviews-section__background--left">
+                        <Image
+                            src={getAssetPath("/images/blob.webp")}
+                            alt="Blob"
+                            height={1100}
+                            width={1100}
+                        />
+                    </div>
+                    <div className="reviews-section__background--right">
+                        <Image
+                            src={getAssetPath("/images/blob.webp")}
+                            alt="Blob"
+                            height={1100}
+                            width={1100}
+                        />
+                    </div>
+                </div>
             </div>
         </section>
     );

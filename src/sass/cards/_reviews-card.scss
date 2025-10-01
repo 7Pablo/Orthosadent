@@ -2,5 +2,73 @@
 @use '../utils/mixins' as *;
 
 .reviews-card {
-    
+    @include flex($gap: 30px);
+    padding: 40px 20px;
+    border-radius: 20px;
+    background-color: $background;
+    width: 100%;
+    max-width: 300px;
+    height: fit-content;
+    box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
+    margin: 8px 0;
+    user-select: none;
+
+    &__image {
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+    }
+
+    &__top {
+        @include flex($gap: 5px);
+
+        h2 {
+            @include title-font($size: 20px, $color: $gray-dark);
+            line-height: 24px;
+        }
+
+        h3 {
+            @include title-font($size: 16px, $color: $gray-light);
+            line-height: 20px;
+        }
+    }
+
+    p {
+       @include title-font($size: 16px, $color: $gray-dark); 
+       line-height: 20px;
+       text-align: center;
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .reviews-card {
+        max-width: 290px;
+        gap: 20px;
+
+        &__top {
+            h2 {
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            h3 {
+                font-size: 15px;
+                line-height: 19px;
+            }
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 19px;
+        }
+    }
 }
