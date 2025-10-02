@@ -31,6 +31,7 @@
             .chakra-accordion__itemTrigger{
                 @include flex($direction: row, $justify: space-between);
                 cursor: pointer;
+                outline: none;
 
                 svg {
                     color: $gold-primary;
@@ -41,6 +42,17 @@
     }
 
     
+}
+
+// Responsvie smedium
+@include responsive(medium) {
+    .faq-accordion {
+        .chakra-accordion__root {
+            .chakra-accordion__item {
+                max-width: 700px;
+            }
+        }
+    }
 }
 
 // Responsive small
