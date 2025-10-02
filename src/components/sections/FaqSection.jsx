@@ -11,9 +11,11 @@ export default function FaqSection({ trans }) {
         <section id="faq" className="faq-section">
             <div className="faq-section__content">
                 <div className="faq-section__left">
-                    <FaqAccordion
-                        trans={trans}
-                    />
+                    <AnimatedSection animation="slideFromLeft" delay={0.2}>
+                        <FaqAccordion
+                            trans={trans}
+                        />
+                    </AnimatedSection>
                 </div>
                 <div className="faq-section__right">
                     <AnimatedSection animation="slideFromRight" delay={0.2}>

@@ -1,6 +1,6 @@
 {
     "navbar": {
-        "start": "Home",
+        "hero": "Start",
         "benefits": "Benefits",
         "about": "About me",
         "services": "Services",
@@ -115,21 +115,14 @@
     },
 
     "reviews": {
-        "title": "What our patients say",
-        "body": "Our patients’ trust is our best introduction. Here we share real experiences from those who have trusted us to take care of their smile.",
+        "title": "What Our Patients Say",
+        "body": "The trust of our patients is our best introduction card. Here we share real experiences from those who have trusted us to take care of their smile.",
         "image": "Patient image",
-        "card1": {
-            "month": "June",
-            "review": "La Dra. Ana Pau me acompañó durante mi cirugía ortognática con gran profesionalismo y amabilidad. Siempre estuvo al pendiente y trabajando junto a otros especialistas para lograr los mejores resultados. Estoy muy agradecida por su atención."
-        },
-        "card2": {
-            "month": "January",
-            "review": "Personalized care and visible results from the first visits. I recommend Orthosadent to my entire family for their professionalism and warmth."
-        },
-        "card3": {
-            "month": "September",
-            "review": "Excellent care from the very first appointment. The team was very professional and kind, and my smile has never been so aligned and healthy."
-        }
+        "june": "June",
+        "may": "May",
+        "card_review1": "Dr. Ana Pau accompanied me throughout my orthognathic surgery process, always with kindness and commitment. Despite the complexity of my case, she was attentive and worked alongside other specialists to ensure everything went well.",
+        "card_review2": "I had the pleasure of being treated by Dr. Ana Pau, always dedicated to her patients, kind, explaining each procedure to be performed and always giving advice about oral health. I’m very grateful.",
+        "card_review3": "I had an excellent experience with Dr. Ana Paula, she is very kind and always made me feel comfortable and confident. She changed my life, my self-esteem, and now I’m no longer embarrassed to smile."
     },
 
     "faq": {
@@ -165,7 +158,8 @@
         "body": "We work every day to provide you with close, professional, and high-quality care, ensuring well-being and confidence in every visit. Your best smile starts here.",
         "links": "Quick links",
         "social": "Social media",
-        "copyright": "All rights reserved."
+        "copyright": "All rights reserved.",
+        "icon": "Footer icon"
     },
 
     "buttons": {

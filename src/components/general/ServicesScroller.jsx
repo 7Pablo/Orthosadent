@@ -13,13 +13,16 @@ import { useEffect, useRef, useState } from 'react';
 export default function ServicesScroller({ slides }) {
     const swiperRef = useRef(null);
     const [slidesPerView, setSlidesPerView] = useState(3);
+    const [slidesGap, setSlidesGap] = useState(0);
 
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth <= 1200) {
                 setSlidesPerView(1);
+                setSlidesGap(30);
             } else {
                 setSlidesPerView(3);
+                setSlidesGap(0);
             }
         };
 
@@ -49,7 +52,7 @@ export default function ServicesScroller({ slides }) {
             <Swiper
                 modules={[Autoplay, Navigation, Pagination]}
                 slidesPerView={slidesPerView}
-                spaceBetween={30}
+                spaceBetween={slidesGap}
                 centeredSlides={slidesPerView > 1}
                 loop={true}
                 autoplay={{

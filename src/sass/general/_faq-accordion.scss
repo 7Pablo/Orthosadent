@@ -2,5 +2,66 @@
 @use '../utils/mixins' as *;
 
 .faq-accordion {
+    @include body-font($size: 16px, $color: $gray-light); 
+    width: 100%;
+
+    h3 {
+        @include title-font($size: 18px, $color: $gray-dark);
+        line-height: 22px;
+    }
+
+    p {
+        @include body-font($size: 16px, $color: $gray-light); 
+        text-align: start;
+        line-height: 20px;
+    }
+
+    .chakra-accordion__root {
+        @include flex($gap: 30px);
+
+        .chakra-accordion__item {
+            @include flex($align: start);
+            background-color: #fff;
+            border-radius: 10px;
+            width: 100%;
+            padding: 15px 20px;
+            box-shadow: 0px 4px 4px rgba($gold-primary, 1); 
+            border: none;
+
+            .chakra-accordion__itemTrigger{
+                @include flex($direction: row, $justify: space-between);
+                cursor: pointer;
+
+                svg {
+                    color: $gold-primary;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
     
+}
+
+// Responsive small
+@include responsive(small) {
+    .faq-accordion {
+        h3 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .chakra-accordion__root {
+            gap: 25px;
+
+            .chakra-accordion__item {
+                padding: 12px 18px;
+
+                .chakra-accordion__itemTrigger{
+                    justify-content: center;
+                    gap: 10px;
+                }
+            }
+        }
+    }
 }

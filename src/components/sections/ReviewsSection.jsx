@@ -13,20 +13,20 @@ export default function ReviewsSection({ trans }) {
        {
         img: getAssetPath("/pictures/review1.jpg"),
         name: "Eldabeth Hernández",
-        period: `${trans.reviews.card1.month} 2023`,
-        review: `${trans.reviews.card1.review}`
+        period: `${trans.reviews.june} 2023`,
+        review: `${trans.reviews.card_review1}`
        },
        {
-        img: getAssetPath("/pictures/review1.jpg"),
-        name: "Eldabeth Hernández",
-        period: `${trans.reviews.card1.month} 2023`,
-        review: `${trans.reviews.card1.review}`
+        img: getAssetPath("/pictures/review2.jpg"),
+        name: "Fani Rut Mulero",
+        period: `${trans.reviews.june} 2023`,
+        review: `${trans.reviews.card_review2}`
        },
        {
-        img: getAssetPath("/pictures/review1.jpg"),
-        name: "Eldabeth Hernández",
-        period: `${trans.reviews.card1.month} 2023`,
-        review: `${trans.reviews.card1.review}`
+        img: getAssetPath("/pictures/review3.jpg"),
+        name: "Estefani Escamilla ",
+        period: `${trans.reviews.june} 2023`,
+        review: `${trans.reviews.card_review3}`
        },
     ];
 

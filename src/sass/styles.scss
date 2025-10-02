@@ -12,6 +12,7 @@
 @use './sections/contact-section' as *;
 @use './sections/reviews-section' as *;
 @use './sections/faq-section' as *;
+@use './sections/footer' as *;
 
 // General
 @use './general/section-title' as *;
@@ -29,6 +30,7 @@
 @use './buttons/general-button' as *;
 @use './buttons/language-button' as *;
 @use './buttons/ham-drowpdown' as *;
+@use './buttons/social-button' as *;
 
 html, body, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

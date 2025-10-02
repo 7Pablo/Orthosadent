@@ -6,12 +6,14 @@
     width: 100%;
 
     &__content {
-        @include flex($direction: row, $gap: 100px);
-        padding: 60px 50px;
+        @include flex($direction: row, $gap: 120px);
+        padding: 60px 50px 100px;
         max-width: 1440px;
     }
 
-    &__left {
+    &__left { 
+        align-self: end;
+        width: 100%;
         flex: 1;
     }
 
@@ -42,7 +44,13 @@
 @include responsive(medium) {
     .faq-section {
         &__content {
-            padding: 60px 40px;
+            @include flex($gap: 60px);
+            padding: 60px 40px 100px;
+        }
+
+        &__left {
+            align-self: center;
+            order: 2;
         }
     }
 }

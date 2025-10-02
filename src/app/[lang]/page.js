@@ -8,6 +8,7 @@ import ServicesSection from "@/components/sections/ServicesSection";
 import ContactSection from "@/components/sections/ContactSection";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import FaqSection from "@/components/sections/FaqSection";
+import Footer from "@/components/sections/Footer";
 
 // Metadata
 
@@ -53,6 +54,11 @@ export default async function LandingPage({ params }) {
 
             {/* FAQ */}
             <FaqSection
+              trans={trans}
+            />
+
+            {/* Footer */}
+            <Footer
               trans={trans}
             />
         </div>

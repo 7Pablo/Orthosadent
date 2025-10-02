@@ -43,15 +43,13 @@
 // Responsive medium
 @include responsive(medium) {
     .reviews-scroller {
-        max-width: 300px;
+        max-width: 100vw;
     }
 }
 
 // Responsive small
 @include responsive(small) {
     .reviews-scroller {
-        max-width: 100vw;
-
         &__buttons {
             margin: 20px 0;
         }

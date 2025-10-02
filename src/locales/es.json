@@ -1,6 +1,6 @@
 {
     "navbar": {
-        "start": "Inicio",
+        "hero": "Inicio",
         "benefits": "Beneficios",
         "about": "Sobre mí",
         "services": "Servicios",
@@ -118,18 +118,11 @@
         "title": "Lo que nuestros pacientes dicen",
         "body": "La confianza de nuestros pacientes es nuestra mejor carta de presentación. Aquí compartimos experiencias reales de quienes han confiado en nosotros para cuidar su sonrisa.",
         "image": "Imagen del paciente",
-        "card1": {
-            "month": "Junio",
-            "review": "La dra. Ana Pau me acompañó en todo mi proceso de cirugía ortognática, siempre con amabilidad y compromiso. A pesar de lo complejo de mi caso, estuvo al pendiente y trabajando junto a otros especialistas para que todo saliera bien."
-        },
-        "card2": {
-            "month": "Enero",
-            "review": "Atención personalizada y resultados visibles desde las primeras visitas. Recomiendo Orthosadent a toda mi familia por su profesionalismo y cercanía."
-        },
-        "card3": {
-            "month": "Septiembre",
-            "review": "Excelente atención desde la primera cita. El equipo fue muy profesional y cercano, y mi sonrisa nunca había estado tan alineada y saludable."
-        }
+        "june": "Junio",
+        "may": "Mayo",
+        "card_review1": "La dra. Ana Pau me acompañó en todo mi proceso de cirugía ortognática, siempre con amabilidad y compromiso. A pesar de lo complejo de mi caso, estuvo al pendiente y trabajando junto a otros especialistas para que todo saliera bien.",
+        "card_review2": "Tuve el gusto de ser atendida por la dra. Anapau siempre dedicada con sus pacientes, amable, explica cada procedimiento a realizar y siempre aconsejando a cerca de la salud bucal, muy agradecida.",
+        "card_review3": "Tuve una excelente experiencia  con la doctora Ana Paula, es muy amable y siempre me hizo sentirme cómoda y en confianza, cambio mi vida, mi autoestima, ahora no me da pena sonreír."
     },
 
     "faq": {
@@ -165,7 +158,8 @@
         "body": "Trabajamos cada día para brindarte una atención cercana, profesional y de calidad, asegurando bienestar y confianza en cada visita. Tu mejor sonrisa empieza aquí.",
         "links": "Enlaces rápidos",
         "social": "Redes sociales",
-        "copyright": "Todos los derechos reservados."
+        "copyright": "Todos los derechos reservados.",
+        "icon": "Ícono de footer"
     },
 
     "buttons": {
