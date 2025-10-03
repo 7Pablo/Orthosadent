@@ -37,6 +37,10 @@
                 max-width: 700px;
             }
         }
+
+        img {
+            user-select: none;
+        }
     }
 }
 

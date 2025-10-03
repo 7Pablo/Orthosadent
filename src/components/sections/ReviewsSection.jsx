@@ -25,7 +25,7 @@ export default function ReviewsSection({ trans }) {
        {
         img: getAssetPath("/pictures/review3.jpg"),
         name: "Estefani Escamilla ",
-        period: `${trans.reviews.june} 2023`,
+        period: `${trans.reviews.may} 2023`,
         review: `${trans.reviews.card_review3}`
        },
     ];

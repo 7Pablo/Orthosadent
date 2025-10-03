@@ -8,21 +8,29 @@ export default function GeneralButton({
   children,
   scrollTo,  
   href,      
+  download,  
   onClick
 }) {
 
   const handleClick = (e) => {
     if (scrollTo) {
       e.preventDefault();
-      smoothScroll(scrollTo, 1000); 
+      smoothScroll(scrollTo, 1000);
+    } else if (download) {
+      e.preventDefault();
+      const link = document.createElement("a");
+      link.href = download;
+      const urlParts = download.split("/");
+      link.download = urlParts[urlParts.length - 1];
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     } else if (href) {
       e.preventDefault();
-      window.open(href, "_blank"); 
+      window.open(href, "_blank");
     }
 
-    if (onClick) {
-      onClick(e);
-    }
+    if (onClick) onClick(e);
   };
 
   return (

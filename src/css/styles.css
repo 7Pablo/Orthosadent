@@ -178,6 +178,7 @@
   align-items: center;
   justify-content: start;
   list-style-type: none;
+  user-select: none;
 }
 .navbar__items a {
   font-family: "Libre Baskerville", serif;
@@ -969,6 +970,9 @@
   line-height: 24px;
   max-width: 700px;
 }
+.faq-section__right img {
+  user-select: none;
+}
 
 @media (max-width: 1200px) {
   .faq-section__content {
@@ -1037,6 +1041,7 @@
   gap: 10px;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 .footer__top--logo img {
   height: 82px;
@@ -1134,6 +1139,7 @@
   gap: 15px;
   align-items: start;
   justify-content: center;
+  user-select: none;
 }
 .footer__bottom--links-line {
   background-color: white;

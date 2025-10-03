@@ -42,6 +42,7 @@
     &__items {
         @include flex($direction: row, $justify: start, $gap: 40px);
         list-style-type: none;
+        user-select: none;
 
         a {
             @include title-font($size: 14px, $weight: 500);

@@ -20,6 +20,7 @@
 
         &--logo {
             @include flex($direction: row, $gap: 10px);
+            user-select: none;
 
             img {
                 height: 82px;
@@ -87,6 +88,7 @@
 
         &--links {
             @include flex($align: start, $gap: 15px);
+            user-select: none;
 
             &-line {
                 background-color: white;

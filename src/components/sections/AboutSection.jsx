@@ -63,7 +63,7 @@ export default function AboutSection({ trans }) {
                         <div className="about-section__right--button">
                             <GeneralButton
                                 type="secondary"
-                                href="https://www.google.com/?zx=1758670895695&no_sw_cr=1"
+                                download="/files/CV_AnaPaula.pdf"
                             >
                                 {trans.buttons.more}
                             </GeneralButton>
